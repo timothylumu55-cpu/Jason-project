@@ -1,0 +1,122 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+body{
+  background-image: url(bull.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav{
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
+
+}
+nav img{
+    width: 600;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+color:black;
+text-decoration: none;
+font-size: 20px;
+
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0px ;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+
+}
+.nav-links ul li:hover::after{
+    width: 100;
+}
+.text-box{
+width: 190%;
+color: black;
+position: center;
+top: 50px;
+left: 50px;
+transform: translate(50% 50%);
+text-align:after center;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: yellow;
+    border: 1px solid yellow;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.hero-btn:hover{
+    border:1px solid red;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+font-size: 20px;
+
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+nav .fa{
+    display: block;
+    color: #f44336;
+    margin: 10px;
+    cursor: pointer;
+}
+.donate-btn{
+    background: #28a745;  /* green */;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background 0.2s ease-in-out,transform 0.2s ease;
+
+}
+.donate-btn:hover {
+background: #28a745;  /* darker green */
+transform: translateY(-2px); /* lifts up slightly */
+cursor: pointer;
+
+
+}
+    
